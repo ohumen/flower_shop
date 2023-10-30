@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Wildflower Shop</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
+</head>
+<body class="reveal fade-bottom">
+
+    <!-- NAVIGATION -->
+    <nav class="nav" id="desktop-nav">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-page">
+
+        <!-- HEADER -->
+        <header class="header" id="page-header">
+            <p class="header-title">Wildflower Studios</p>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                <li class="nav-item"><a href="shop.html" class="nav-link">Shop</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </header>
+
+        <!-- CONTACT -->
+        <section class="contact reveal fade-bottom" id="contact">
+            <div class="contact-container">
+                <h1 class="contact-title">Connect With Us</h1>
+                <p class="contact-subtitle">We would love to hear what kind of story you would like to create with our flowers.</p>
+                <div class="contact-information">
+                    <form method="POST">
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="first-name">First Name</label>
+                                <input type="text" name="first-name" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" name="last-name" required>
+                            </div>
+                        </div>
+                        <div class="input-col">
+                            <div class="input-group">
+                                <label for="phone">Phone</label>
+                                <input type="text" name="phone" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="find-out">How did you find out about Wildflower Studios?</label>
+                                <select name="find-out" id="find-out">
+                                    <option value="instagram">Instagram</option>
+                                    <option value="twitter">Twitter</option>
+                                    <option value="pinterest">Pinterest</option>
+                                    <option value="referral">Referral</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <label for="location-message">Where are flowers being sent to?</label>
+                                <textarea name="location-message" id="contact-input textarea" required></textarea>
+                            </div>
+                            <div class="input-group">
+                                <label for="location-date">What delivery date do you have in mind?</label>
+                                <textarea name="location-date" id="contact-input textarea" required></textarea>
+                            </div>
+                            <div class="input-group">
+                                <label for="story-message">Tell us a bit about who these flowers are for.</label>
+                                <textarea name="story-message" id="contact-input textarea" rows="10" required></textarea>
+                            </div>
+                            <div class="input-group">
+                                <label for="budget-message">What is your estimated budget?</label>
+                                <textarea name="budget-message" id="contact-input textarea" required></textarea>
+                            </div>
+                            <h3>Which package option would you like to get?</h3>
+                            <div class="input-group">
+                                <div class="checkbox-row">
+                                    <input type="checkbox" name="check" id="check" required>
+                                    <label for="check">Protective Box with Water Reservoir</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" name="check" id="check" required>
+                                    <label for="check">Eco-Friendly Flower Wrap with Vase</label>
+                                </div>
+                                <div class="checkbox-row">
+                                    <input type="checkbox" name="check" id="check" required>
+                                    <label for="check">Elegant Floral Gift Box</label>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <label for="extra-message">Is there anything else you'd like us to know?</label>
+                                <textarea name="extra-message" id="contact-input textarea" rows="10" required></textarea>
+                            </div>
+                        </div>
+                        <div class="contact-btn">
+                            <button class="btn" type="submit">Send Message</button>
+                            <p class="muted"><em>All fields are required. We'll get back to you as soon as possible.</em></p>
+                        </div>
+                    </form>   
+                </div>
+            </div>
+        </section>
+
+        <!-- LETTER -->
+        <section class="letter" id="letter">
+            <div class="letter-container">
+                <div class="letter-body left"></div>
+                <div class="letter-body center">
+                    <p class="letter-text">We believe that the artful arrangement of flowers can evoke emotions and memories, effectively creating a beautiful and meaningful story without words.</p>
+                </div>
+                <div class="letter-body right"></div>
+            </div>
+        </section>
+
+        <!-- NEWSLETTER -->
+        <section class="newsletter" id="newsletter">
+            <div class="newsletter-container">
+                <div class="newsletter-body left"></div>
+                <div class="newsletter-body right">
+                    <h2 class="newsletter-title">Sign Up To Join Our Wildflower Community</h2>
+                    <p class="newsletter-subtitle">Wildflower Studios newsletter guarantees that your inbox will be filled with pretty-looking flowers (and freebies) to cheer you up!</p>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="first-name">First Name</label>
+                            <input type="text" name="first-name">
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email">
+                        </div>
+                    </div>
+                    <button class="btn" type="submit">Sign Me Up!</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Copyright &#169; 2023 Wildflower Studios. All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
